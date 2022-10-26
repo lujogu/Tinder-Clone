@@ -6,7 +6,7 @@ import SwipeButtons from "./SwipeButtons";
 import Chats from "./Chats";
 import ChatScreen from "./ChatScreen";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Router>
@@ -28,6 +28,6 @@ function App() {
       </Router>
     </div>
   );
-}
+};
 
 export default App;

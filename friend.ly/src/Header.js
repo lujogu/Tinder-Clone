@@ -5,22 +5,19 @@ import IconButton from '@mui/material/IconButton';
 import { Link, useNavigate } from 'react-router-dom';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
-function Header({ backButton }) {
+const Header = ({ backButton }) => {
   const navigate = useNavigate();
   return (
     //BEM
     <div className="header">
       {backButton ? (
-        <Link to="/">
-          <IconButton onClick={() => navigate.replace(backButton)}>
-            <ArrowBackIosIcon fontSize="large" className="header_icon"/>
-          </IconButton>
-        </Link>
-
+        <IconButton onClick={() => navigate(backButton, {replace: true})}>
+          <ArrowBackIosIcon className="header_icon" fontSize="large" />
+        </IconButton>
       ) : (
-      <IconButton>
-        <PersonIcon className="header_icon" fontSize="large"/>
-      </IconButton>
+        <IconButton>
+          <PersonIcon className="header_icon" fontSize="large" />
+        </IconButton>
 
       )}
 
