@@ -6,22 +6,12 @@ function ChatScreen() {
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState([
     {
-      name: 'zadathon',
-      image: 'https://media-exp1.licdn.com/dms/image/C4E03AQESVJmmSCmmAA/profile-displayphoto-shrink_200_200/0/1649380925951?e=2147483647&v=beta&t=uo-QyobwfSrE5osbL7ii1YCOsoxLHJgHfJiYucVfOCQ',
-      message: "What's up :)"
+      name: 'bro',
+      image: 'https://static.wikia.nocookie.net/gametoons-among-us/images/d/da/RBBro.jpeg/revision/latest?cb=20210520145438',
+      message: "I love you bro ;)"
     },
     {
-      name: 'zadathon',
-      image: 'https://media-exp1.licdn.com/dms/image/C4E03AQESVJmmSCmmAA/profile-displayphoto-shrink_200_200/0/1649380925951?e=2147483647&v=beta&t=uo-QyobwfSrE5osbL7ii1YCOsoxLHJgHfJiYucVfOCQ',
-      message: "I miss you"
-    },
-    {
-      name: 'zadathon',
-      image: 'https://media-exp1.licdn.com/dms/image/C4E03AQESVJmmSCmmAA/profile-displayphoto-shrink_200_200/0/1649380925951?e=2147483647&v=beta&t=uo-QyobwfSrE5osbL7ii1YCOsoxLHJgHfJiYucVfOCQ',
-      message: "Let me get a tickle in"
-    },
-    {
-      message: "ofc big بابا"
+      message: "love you too bro"
     }
   ]);
 
