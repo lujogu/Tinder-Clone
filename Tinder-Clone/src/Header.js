@@ -11,9 +11,12 @@ function Header({ backButton }) {
     //BEM
     <div className="header">
       {backButton ? (
-        <IconButton onClick={() => navigate.replace(backButton)}>
-          <ArrowBackIosIcon fontSize="large" className="header_icon"/>
-        </IconButton>
+        <Link to="/">
+          <IconButton onClick={() => navigate.replace(backButton)}>
+            <ArrowBackIosIcon fontSize="large" className="header_icon"/>
+          </IconButton>
+        </Link>
+
       ) : (
       <IconButton>
         <PersonIcon className="header_icon" fontSize="large"/>
